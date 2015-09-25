@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <link href="js/jquery.zrssfeed.css" rel="stylesheet" type="text/css" />
+    <link href="socialist/jquery.socialist.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
+    <script src='socialist/jquery.socialist.min.js' type="text/javascript"></script>
+</head>
+<body>
+
+<br>
+<br>
+<div class="socialist" id="socialist">
+
+</div>
+<script>
+    $('#socialist').socialist({
+        networks: [
+            //{name:'linkedin',id:'buddy-media'},
+            {name:'facebook',id:'SoCalPonds'},
+            //{name:'pinterest',id:'potterybarn'},
+            {name:'twitter',id:'SoCalPonds'},
+            {name:'googleplus',id:'111403165026960810013/posts'},
+            {name:'rss',id:'http://www.thepondforum.com/external.php?type=RSS2&#038;forumids=15'},
+            //{name:'craigslist',id:'boo',areaName:'southcoast'}
+        ],
+        isotope:false,
+        random:false,
+        maxResults: 5,
+        fields:['source','heading','text','date','image']
+    });
+</script>
+</body>
+</html>

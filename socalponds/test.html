@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>So-Cal Ponds</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS   ================================================== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/SoCalPond_logo_bamboo-rocks.png">
+
+    <!-- JS   ================================================== -->
+    <script type="text/javascript" src="js/pic-viewer.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#myform').bValidator();
+        });
+    </script>
+
+</head>
+<body>
+    <div class="viewer">
+        <div class="viewer-window" id="window">
+            <img href="images/img_20120830.jpg">
+        </div>
+        <div class="viewer-thumbs">
+            <img src="images/001thumb.jpg" alt="Pond Portfolio Thumbnail" title="Pond Portfolio Thumbnail" class="viewer-thumb" /></a>
+            <img src="images/002thumb.jpg" alt="Pond Portfolio Thumbnail" title="Pond Portfolio Thumbnail" class="viewer-thumb" /></a>
+            <img src="images/008thumb.jpg" alt="Pond Portfolio Thumbnail" title="Pond Portfolio Thumbnail" class="viewer-thumb" /></a>
+            <img src="images/img_20120830thumb.jpg" alt="Pond Portfolio Thumbnail" title="Pond Portfolio Thumbnail" class="viewer-thumb" /></a>
+
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            //Debug-start
+            if(HW2.DEBUG) {console.log("Entering event handlers");}
+            //Debug-end
+
+            document.getElementsByClassName("viewer-thumb").onclick = JS.changePic();
+        }
+    </script>
+</body>
+</html>

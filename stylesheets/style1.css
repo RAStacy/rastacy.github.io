@@ -1,0 +1,229 @@
+@font-face {
+    font-family: '8-bit';
+    src: url('../fonts/8-bit/8-bit_madness-webfont.eot');
+    src: url('../fonts/8-bit/8-bit_madness-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/8-bit/8-bit_madness-webfont.woff') format('woff'),
+    url('../fonts/8-bit/8-bit_madness-webfont.ttf') format('truetype'),
+    url('../fonts/8-bit/8-bit_madness-webfont.svg#8-bit_madnessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+a {
+    text-decoration: none !important;
+}
+body {
+    font-family: helvetica;
+    position: relative;
+}
+footer .nine.columns {
+    margin-right: 0;
+}
+footer .seven.columns {
+    margin-left: 0;
+}
+ul {
+    color: inherit;
+    font-size: 16px;
+    margin: 10px 0 10px 25px;
+}
+.banner {
+    position: relative;
+}
+.banner img {
+    height: auto;
+    width: 100%;
+}
+.bblack {
+    background-color: #282828;
+}
+.bgreen {
+    background-color: #679651;
+}
+.blgreen {
+    background-color: #CEE6C4;
+}
+.bgrey {
+    background-color: #b3b3b3;
+}
+.bred {
+    background-color: #AF3939;
+}
+.bgreen, .bgrey, .bred {
+    padding: 50px 0;
+}
+.social .col-md-4 {
+    display: inline-block; 
+    width: 33%;
+}
+.social .col-sm-4 {
+    display: inline-block;
+}
+.social .col-md-4 p, .social .col-sm-4 p {
+    display: inline;
+}
+.comp {
+    display: inline;
+    font-weight: bolder;
+}
+.contact {
+    position: absolute;
+    left: 105%;
+    top: 0;
+    width: 25%;
+}
+.contact-label {
+    font-weight: bold;
+    line-height: 32px;
+}
+.edu .columns {
+    display: inline;
+    margin: 0;
+}
+.exp .three.columns {
+    margin: 0;
+}
+.flexslider {
+    border: 5px #fff400 solid;
+    width: 30%;
+    margin: 0;
+    position: absolute;
+    bottom: 16%;
+    right: 10%;
+}
+.flexslider img {
+    margin: 0;
+}
+.footer p {
+    color: #fff400;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer .right {
+    margin-left: 0;
+}
+.input-xxlarge {
+    width: 500px;
+}
+.statement {
+    height: 190px;
+    color: #f5f5f5;
+    font-family: helvetica;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+.main {
+    height: auto;
+    padding: 5px 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+.main.content {
+    position: relative;
+}
+.name {
+    margin: 0 auto;
+    position: relative;
+}
+.control-group:first-of-type {
+    margin-bottom: 20px;
+}
+.school {
+    display: inline-block;
+    color: #3b3c5b;
+    font-size: 15px;
+    margin: 0;
+    padding: 6px 0
+}
+.right {
+    float: right;
+}
+.right textarea {
+    width: 350px;
+}
+.row {
+    margin: 0;
+}
+.school p {
+    margin: 0;
+}
+.skills {
+    height: 250px;
+    padding-left: 55px;
+}
+.social {
+    width: 100%;
+    height: 32px;
+    padding: 10px 0;
+    z-index: 5;
+}
+.social-img {
+    padding-left: 30%;
+    padding-right: 10px;
+}
+.social p {
+    color: black;
+}
+.social p:hover {
+    color: yellow;
+    cursor: pointer;
+}
+.social .row {
+    margin: 0 auto;
+    max-width: 940px;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+.ucsd {
+    margin-bottom: 35px;
+}
+.ucsd, .ash {
+    display: block;
+    height: 95px;
+}
+.work {
+    color: #f5f5f5;
+    padding: 0 20px;
+}
+.work a {
+    color: #C51A1A;
+    font-weight: bold;
+}
+.work a:hover {
+    color: #282828;
+    text-decoration: none;
+}
+.work span.title {
+    color: #fff400;
+}
+
+
+/* Stick Footer */
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -250px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer {
+    padding: 60px 0 20px 0;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 250px; 
+}

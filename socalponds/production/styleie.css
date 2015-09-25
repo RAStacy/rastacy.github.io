@@ -1,0 +1,17 @@
+nav {
+	z-index: auto;
+}
+.content, #myform {
+    /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=55)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=55);
+}
+nav, nav ul ul, .motto, footer {
+    /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=85);
+}

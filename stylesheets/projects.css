@@ -1,0 +1,1001 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Font-Face
+	#Site Styles
+	#Page Styles
+	#Media Queries */
+
+/* #Font-Face
+================================================== */
+@font-face {
+    font-family: '8-bit';
+    src: url('../fonts/8-bit/8-bit_madness-webfont.eot');
+    src: url('../fonts/8-bit/8-bit_madness-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/8-bit/8-bit_madness-webfont.woff') format('woff'),
+        url('../fonts/8-bit/8-bit_madness-webfont.ttf') format('truetype'),
+        url('../fonts/8-bit/8-bit_madness-webfont.svg#8-bit_madnessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* #Site Styles
+================================================== */
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+    font-family: helvetica;
+    line-height: normal;
+    position: relative;
+}
+a:hover {
+	text-decoration: none;
+}
+ul {
+    color: inherit;
+    font-size: 16px;
+    margin: 10px 0 10px 25px;
+}
+
+/* Color Pallet */
+.bblack{
+    background-color: #282828;
+}
+.bgreen {
+    background-color: #679651;
+}
+.blgreen {
+    background-color: #CEE6C4;
+}
+.bgrey {
+    background-color: #b3b3b3;
+}
+.bred {
+    background-color: #AF3939;
+}
+.byellow {
+    background-color: #fff400;
+}
+.bgreen, .bgrey, .bred, .bblack {
+    padding: 50px 0;
+}
+
+/* Header */
+
+.top-logo {
+    display: inline;
+    padding: 10px;
+}
+.top-logo img {
+    display: block;
+    margin: auto;
+}
+.social {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    height: 36px;
+    width: 36px;
+}
+.social.email {
+  height: 29px;
+  width: 29px;
+}
+.top-title {
+  color: black;
+  font-family: '8-bit';
+  font-size: 100px;
+  position: absolute;
+  left: 235px;
+  bottom: 5px;
+}
+.top-title-wp {
+  color: black;
+  font-family: '8-bit';
+  font-size: 100px;
+  position: absolute;
+  left: 230px;
+  bottom: -39.5px;
+}
+.top-title:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.accord-title {
+  display: none;
+}
+.half {
+  width: 50%;
+}
+.main.content {
+    position: relative;
+}
+.right {
+    float: right;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Brave Plugin */
+
+.brave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 210px;
+}
+.brave img {
+  width: 100%;
+  position: absolute;
+  top: -12px;
+  right: -14px;
+}
+
+/* Screen sizes smaller than 1275 (devices and browsers) */
+  @media only screen and (min-width: 1050px) and (max-width: 1275px) {
+    .brave img {
+      width: 70%;
+    }
+  }
+/* Screen sizes smaller than 1050 (devices and browsers) */
+  @media only screen and (min-width: 900px) and (max-width: 1050px) {
+    .brave img {
+      width: 55%;
+      top: -6px;
+      right: -8px;
+    }
+  }
+/* Screen sizes smaller than 1050 (devices and browsers) */
+  @media only screen and (min-width: 767px) and (max-width: 900px) {
+    .brave img {
+      width: 45%;
+      top: -6px;
+      right: -8px;
+    }
+  }
+/* Screen sizes smaller than 1050 (devices and browsers) */
+  @media only screen and (max-width: 767px) {
+    .brave img {
+      display: none;
+    }
+  }
+
+/* Solar System Background */
+
+.moon-container {
+    position: relative;
+}
+.solar {
+    background-image: url('../images/starfield.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 960px;
+    overflow: hidden;
+    padding-top: 181px;
+}
+#sun {
+    position: absolute;
+    /* Positions the top-left corner of the image to be *
+    /* in the middle of the box */
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+#mercury {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 7px;
+    width: 7px;
+    margin-left: -3.5px;
+    margin-top: -3.5px;
+}
+
+#mercury-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 225px;
+    height: 225px;
+    margin-top: -112.5px;
+    margin-left: -112.5px;
+    /* border: 2px dotted white; */
+    border-radius:50%;
+    -webkit-animation: spin-right 44s linear infinite;
+     -moz-animation: spin-right 44s linear infinite;
+      -ms-animation: spin-right 44s linear infinite;
+       -o-animation: spin-right 44s linear infinite;
+          animation: spin-right 44s linear infinite;
+    -webkit-animation-delay: -11s;
+     -moz-animation-delay: -11s;
+      -ms-animation-delay: -11s;
+       -o-animation-delay: -11s;
+          animation-delay: -11s;
+}
+#venus {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 17.1px;
+    width: 17.1px;
+    border-radius: 8.55px;
+    margin-left: -8.55px;
+    margin-top: -8.55px;
+}
+
+#venus-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 275px;
+    height: 275px;
+    margin-top: -137.5px;
+    margin-left: -137.5px;
+    /* border: 2px dotted white; */
+    border-radius:50%;
+    -webkit-animation: spin-right 112.5s linear infinite;
+     -moz-animation: spin-right 112.5s linear infinite;
+      -ms-animation: spin-right 112.5s linear infinite;
+       -o-animation: spin-right 112.5s linear infinite;
+          animation: spin-right 112.5s linear infinite;
+    -webkit-animation-delay:-18.7s;
+     -moz-animation-delay: -18.7s;
+      -ms-animation-delay: -18.7s;
+       -o-animation-delay: -18.7s;
+          animation-delay: -18.7s;
+}
+#earth {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 18px;
+    width: 18px;
+    margin-left: -9px;
+    margin-top: -9px;
+}
+
+#earth-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    margin-top: -175px;
+    margin-left: -175px;
+    /* border: 2px dotted  white; */
+    border-radius:50%;
+    -webkit-animation: spin-right 182.5s linear infinite;
+     -moz-animation: spin-right 182.5s linear infinite;
+      -ms-animation: spin-right 182.5s linear infinite;
+       -o-animation: spin-right 182.5s linear infinite;
+          animation: spin-right 182.5s linear infinite;
+    -webkit-animation-delay:-151s;
+     -moz-animation-delay: -151s;
+      -ms-animation-delay: -151s;
+       -o-animation-delay: -151s;
+          animation-delay: -151s;
+}    
+
+#moon {
+    position: absolute;
+    top: 15%;
+    left: 17.5%;
+    height: 4.9px;
+    width: 4.9px;
+    margin-left: -2.45px;
+    margin-top: -2.45px;
+}
+
+#moon-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius:50%;
+    -webkit-animation: spin-right 13.65s linear infinite;
+     -moz-animation: spin-right 13.65s linear infinite;
+      -ms-animation: spin-right 13.65s linear infinite;
+       -o-animation: spin-right 13.65s linear infinite;
+          animation: spin-right 13.65s linear infinite;
+}
+#mars {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 9.5px;
+    width: 9.5px;
+    margin-left: -4.75px;
+    margin-top: -4.75px;
+}
+
+#mars-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 425px;
+    height: 425px;
+    margin-top: -212.5px;
+    margin-left: -212.5px;
+    /* border: 2px dotted  white; */
+    border-radius:50%;
+    -webkit-animation: spin-right 343.5s linear infinite;
+     -moz-animation: spin-right 343.5s linear infinite;
+      -ms-animation: spin-right 343.5s linear infinite;
+       -o-animation: spin-right 343.5s linear infinite;
+          animation: spin-right 343.5s linear infinite;
+    -webkit-animation-delay: -114s;
+     -moz-animation-delay: -114s;
+      -ms-animation-delay: -114s;
+       -o-animation-delay: -114s;
+          animation-delay: -114s;
+}
+#deimos {
+    position: absolute;
+    top: 15%;
+    left: 17.5%;
+    height: 1px;
+    width: 1px;
+    margin-left: -.5px;
+    margin-top: -.5px;
+}
+
+#deimos-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    margin-top: -7px;
+    margin-left: -7px;
+    border-radius:50%;
+      -webkit-animation: spin-right 1.2s linear infinite;
+       -moz-animation: spin-right 1.2s linear infinite;
+        -ms-animation: spin-right 1.2s linear infinite;
+         -o-animation: spin-right 1.2s linear infinite;
+            animation: spin-right 1.2s linear infinite;
+}
+#phobos {
+    position: absolute;
+    top: 15%;
+    left: 17.5%;
+    height: 2px;
+    width: 2.8px;
+    margin-left: -1.4px;
+    margin-top: -1px;
+}
+
+#phobos-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius:50%;
+      -webkit-animation: spin-right .8s linear infinite;
+       -moz-animation: spin-right .8s linear infinite;
+        -ms-animation: spin-right .8s linear infinite;
+         -o-animation: spin-right .8s linear infinite;
+            animation: spin-right .8s linear infinite;
+}
+#jupiter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+#jupiter-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    margin-top: -300px;
+    margin-left: -300px;
+    /* border: 2px dotted  white; */
+    border-radius:50%;
+    -webkit-animation: spin-right 375s linear infinite;
+     -moz-animation: spin-right 375s linear infinite;
+      -ms-animation: spin-right 375s linear infinite;
+       -o-animation: spin-right 375s linear infinite;
+          animation: spin-right 375s linear infinite;
+    -webkit-animation-delay: -185s;
+     -moz-animation-delay: -185s;
+      -ms-animation-delay: -185s;
+       -o-animation-delay: -185s;
+          animation-delay: -185s;
+}
+#saturn {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 37.8px;
+    width: 84px;
+    margin-left: -42px;
+    margin-top: -23.9px;
+}
+
+#saturn-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    margin-top: -400px;
+    margin-left: -400px;
+    /* border: 2px dotted  white; */
+    border-radius:50%;
+    -webkit-animation: spin-right 665s linear infinite;
+     -moz-animation: spin-right 665s linear infinite;
+      -ms-animation: spin-right 665s linear infinite;
+       -o-animation: spin-right 665s linear infinite;
+          animation: spin-right 665s linear infinite;
+    -webkit-animation-delay: -110s;
+     -moz-animation-delay: -110s;
+      -ms-animation-delay: -110s;
+       -o-animation-delay: -110s;
+          animation-delay: -110s;
+}
+#uranus {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 36px;
+    width: 36px;
+    margin-left: -18px;
+    margin-top: -18px;
+}
+
+#uranus-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 925px;
+    height: 925px;
+    margin-top: -462.5px;
+    margin-left: -462.5px;
+    /* border: 2px dotted  white; */
+    border-radius:50%;
+    -webkit-animation: spin-right 1415s linear infinite;
+     -moz-animation: spin-right 1415s linear infinite;
+      -ms-animation: spin-right 1415s linear infinite;
+       -o-animation: spin-right 1415s linear infinite;
+          animation: spin-right 1415s linear infinite;
+    -webkit-animation-delay: -470s;
+     -moz-animation-delay: -470s;
+      -ms-animation-delay: -470s;
+       -o-animation-delay: -470s;
+          animation-delay: -470s;
+}
+#neptune {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 34.7px;
+    width: 34.7px;
+    margin-left: -17.35px;
+    margin-top: -17.35px;
+}
+
+#neptune-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1025px;
+    height: 1025px;
+    margin-top: -512.5px;
+    margin-left: -512.5px;
+    /* border: 2px dotted  white; */
+    border-radius:50%;
+    -webkit-animation: spin-right 1530s linear infinite;
+     -moz-animation: spin-right 1530s linear infinite;
+      -ms-animation: spin-right 1530s linear infinite;
+       -o-animation: spin-right 1530s linear infinite;
+          animation: spin-right 1530s linear infinite;
+    -webkit-animation-delay:-1300s;
+     -moz-animation-delay: -1300s;
+      -ms-animation-delay: -1300s;
+       -o-animation-delay: -1300s;
+          animation-delay: -1300s;
+}
+
+@-webkit-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Sticky Footer */
+.footer input {
+	line-height: 30px;
+	width: 500px;
+}
+.btn {
+	margin-top: 25px;
+	transition: color .5s;
+	width: 150px;
+	font-family: '8-bit';
+	font-size: 30px;
+	padding: 5px;
+    line-height: normal;
+}
+.btn:hover {
+	color: red;
+}
+.control-group:first-of-type {
+    margin-bottom: 20px;
+}
+.control-group input {
+	height: 35px;
+}
+.footer {
+	height: 250px;
+}
+.footer p {
+    color: #fff400;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.page-wrap {
+	background-color: #282828;
+  	min-height: 100%;
+  	/* equal to footer + padding height */
+  	margin-bottom: -350px; 
+}
+.page-wrap:after {
+  	content: "";
+	display: block;
+}	
+.placeholder {
+    font-family: '8-bit';
+    font-size: 30px;
+    padding-left: 5px;
+}
+::-webkit-input-placeholder {
+    font-family: '8-bit';
+}
+:-moz-placeholder {
+    font-family: '8-bit';
+}
+::-moz-placeholder {
+    font-family: '8-bit';
+}
+:-ms-input-placeholder {
+    font-family: '8-bit';
+}
+.right textarea {
+	line-height: normal;
+	height: 96px;
+    width: 350px;
+}
+.page-wrap:after {
+  	/* .push must be the same height as footer + padding */
+ 	 height: 350px; 
+}
+.submit {
+	text-align: center;
+}
+
+
+
+
+/* #Page Styles
+================================================== */
+
+/* Contact Bar */
+a .contact-label {
+  color: #333;
+}
+a:visited .contact-label {
+  color: #fff400;
+}
+.blog-link img {
+  position: absolute;
+  top: 3px;
+}
+.contact-bar {
+  padding: 5px 0;
+}
+.contact-btn {
+  margin: 8px 0 8px -20px;
+}
+.contact-btn .wrapper {
+  margin-left: 25%;
+  position: relative;
+}
+.contact-label {
+  margin-top: 5px;
+  position: absolute;
+  left: 50px;
+  top: 6px;
+}
+.email-link img {
+  padding-top: 5px;
+}
+
+/* Modal */
+
+#close {
+  position: absolute;
+  background: url(../icons/close.png) 0 0 no-repeat;
+  width: 24px;
+  height: 27px;
+  display:block ;
+  text-indent: -9999px;
+  top: -7px;
+  right: -7px;
+}
+#content {
+  border-radius: 8px;
+  background: #fff;
+  padding: 20px;
+}
+#modal {
+  position: absolute;
+  background: url(tint20.png) 0 0 repeat;
+  background: rgba(0,0,0,0.2);
+  border-radius: 14px;
+  padding: 0;
+  width: 310px !important;
+  height: 476px !important;
+  top: 75px !important;
+  left: 40px !important;
+}
+#overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* Projects */
+
+.container.main {
+	min-height: 960px;
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	top: 181px;
+	margin: 0 auto;
+	left: 20%;
+}
+
+/* Paper, Rock, Scissors Game */
+.outcome {
+    margin-top: 30px;
+}
+.results {
+    width: 45%;
+    display: inline-block;
+}
+.output {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+}
+.score {
+    position: absolute;
+    top: 15px;
+}
+.score.win {
+    left: 15px;
+}
+.score.lose {
+    right: 35px;
+}
+.winner {
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 380px;
+}
+.prs-img {
+    display: none;
+  }
+#prsGame {
+    height: 275px;
+    width: 380px;
+    background-color: rgba(170, 170, 170, 0.82);
+    border: 3px solid black;
+    margin: 35px 0;
+    padding: 35px;
+    position: relative;
+    text-align: center;
+}
+#prsGame #userInput {
+    padding-left: 7px;
+    height: 28px;
+    width: 139px;
+}
+#reset-btn {
+    position: relative;
+}
+#reset-btn.reset-btn {
+    font-size: 15px;
+    width: 80px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* #Media Queries
+================================================== */
+
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {
+    .contact-btn {
+      margin: 0 0 0 -20px;
+    }
+    .footer input {
+        width: 350px;
+    }
+  }
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .contact-btn {
+      margin: 0 0 0 -20px;
+      padding: 5px 0;
+    }
+    .contact-label {
+      font-size: 14px;
+      width: 100%;
+    }
+    .top-logo {
+      height: auto;
+      margin-left: 25px;
+      padding: 10px;
+      width: 125px;
+    }
+    .top-title {
+      font-size: 80px;
+      left: 165px;
+      bottom: 4px;
+    }
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		
+	textarea.right {
+		float: none;
+	}
+  .blog-link img {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    height: 36px;
+    width: 36.5px;
+  }
+	.btn {
+		margin-top: 0;
+	}
+	.clearfix.row {
+		margin-bottom: 0;
+	}
+	.contact-bar {
+      position: fixed;
+      left: 0;
+      top: 43.5px;
+      z-index: 50;
+      width: 50px;
+      background-color: transparent;
+    }
+    .contact-btn {
+      margin: 0;
+    }
+    .contact-btn .wrapper {
+      margin: 0;
+    }
+    .control-group {
+      margin-bottom: 20px;
+    }
+    .contact-label {
+      display: none;
+    }
+    .email {
+      background-color: #b3b3b3;
+      padding: 2px 4px;
+      transition: padding .35s;
+    }
+    .email:hover {
+      padding: 2px 7px;
+    }
+    .footer {
+      height: 370px;
+    }
+    .footer input {
+        width: 420px;
+    }
+    .google {
+      background-color: #C63D2D;
+      padding-left: 1px;
+      transition: padding .35s;
+    }
+    .google:hover {
+      padding: 0 4px 0 4px;
+    }
+	.linkedin {
+		background-color: #4875B4;
+		padding-left: 1px;
+		transition:padding .35s;
+	}
+	.linkedin:hover {
+		padding: 0 4px 0 4px;
+	}
+	.logo {
+		width: 50% !important;
+	}
+    .no-mobile {
+      display: none;
+    }
+	.page-wrap {
+	    min-height: 100%;
+	    /* equal to footer + padding height */
+	    margin-bottom: -470px; 
+	}
+	.page-wrap:after {
+	    /* .push must be the same height as footer + padding */
+	    height: 470px; 
+	}
+    .paypal {
+      display: none;
+    }
+    .paypal-mobile {
+      display: block;
+    }
+    .paypal-mobile-img {
+      background-color: #b3b3b3;
+      padding: 5.5px 6px;
+      transition: padding .35s;
+      width: 25px;
+      height: auto;
+    }
+    .paypal-mobile-img:hover {
+      padding: 5.5px 9px;
+    }
+    .paypal-mobile form {
+      height: 0;
+    }
+		.placeholder, .right textarea {
+			width: 100%;
+		}
+    .prs-img {
+      display: block;
+      text-align: center;
+    }
+    #modal {
+      padding: 0;
+    }
+    #modal #content {
+      padding: 0;
+    }
+    #prsGame {
+      height: 400px;
+      width: 235px;
+      margin: 0;
+    }
+    #prsGame .row {
+      margin-bottom: 45px;
+    }
+    .left #userOutputM {
+        margin-top: 28px;
+    }
+    .results {
+      height: 60px;
+    }
+    .winner {
+      bottom: 85px;
+      width: 80%;
+    }
+    
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.top-logo {
+			padding: 5px;
+			width: 75px;
+		}
+		.top-title {
+			font-size: 40px;
+			left: 88px;
+			bottom: 5px;
+		}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.contact-bar {
+			top: 32px;
+		}
+    .container.main {
+      left: 40px;
+    }
+    .flexslider {
+    	width: 206px;
+	height: 100px;
+        right: 25px;
+    }
+    .footer {
+    	height: 430px;
+    }
+    .footer input {
+        line-height: 30px;
+        height: 25px;
+        width: 300px;
+    }
+		.page-wrap {
+		    min-height: 100%;
+		    /* equal to footer + padding height */
+		    margin-bottom: -480px; 
+		}
+		.page-wrap:after {
+		    /* .push must be the same height as footer + padding */
+		    height: 480px; 
+		}
+    .top-logo {
+			padding: 5px;
+			width: 50px;
+		}
+		.top-title {
+			font-size: 29px;
+			left: 65px;
+			bottom: 6px;
+		}
+    
+	}
+
+
+

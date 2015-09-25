@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://ryanstacy.net/</title>
+  <link>http://ryanstacy.net/</link>
+
+<item>
+     <link>http://ryanstacy.net/</link>
+     <title>Ryan Stacy's RS Web Development</title>
+     <description>Ryan Stacy is a freelance front-end web developer located in San Diego, CA.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://ryanstacy.net/index.html</link>
+     <title>Ryan Stacy's RS Web Development</title>
+     <description>Ryan Stacy is a freelance front-end web developer located in San Diego, CA.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://ryanstacy.net/projects.html</link>
+     <title>Ryan Stacy's RS Web Development</title>
+     <description>Ryan Stacy is a freelance front-end web developer located in San Diego, CA.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://ryanstacy.net/blog/?feed=rss2</link>
+     <title></title>
+     
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://ryanstacy.net/blog/?feed=comments-rss2</link>
+     <title></title>
+     
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

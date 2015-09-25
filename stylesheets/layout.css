@@ -1,0 +1,726 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Font-Face
+	#Site Styles
+	#Page Styles
+	#Media Queries */
+
+/* #Font-Face
+================================================== */
+@font-face {
+    font-family: '8-bit';
+    src: url('../fonts/8-bit/8-bit_madness-webfont.eot');
+    src: url('../fonts/8-bit/8-bit_madness-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/8-bit/8-bit_madness-webfont.woff') format('woff'),
+        url('../fonts/8-bit/8-bit_madness-webfont.ttf') format('truetype'),
+        url('../fonts/8-bit/8-bit_madness-webfont.svg#8-bit_madnessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* #Site Styles
+================================================== */
+
+* {
+  margin: 0;
+  text-shadow: none;
+}
+html, body {
+  height: 100%;
+}
+body {
+    font-family: helvetica;
+    position: relative;
+}
+a:hover {
+	text-decoration: none;
+}
+ul {
+    color: inherit;
+    font-size: 16px;
+    margin: 10px 0 10px 25px;
+}
+
+/* Color Pallet */
+.bblack{
+    background-color: #282828;
+}
+.bgreen {
+    background-color: #679651;
+}
+.blgreen {
+    background-color: #CEE6C4;
+}
+.bgrey {
+    background-color: #b3b3b3;
+}
+.bred {
+    background-color: #AF3939;
+}
+.byellow {
+    background-color: #fff400;
+}
+.bgreen, .bgrey, .bred, .bblack {
+    padding: 50px 0;
+}
+
+/* Header */
+
+.top-logo {
+    display: inline;
+    padding: 10px;
+}
+.top-logo img {
+    display: block;
+    margin: auto;
+}
+.social {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    height: 36px;
+    width: 36px;
+}
+.social.email {
+	height: 29px;
+	width: 29px;
+}
+.top-title {
+	color: black;
+	font-family: '8-bit';
+	font-size: 100px;
+	position: absolute;
+	left: 235px;
+	bottom: -29.5px;
+}
+.top-title-wp {
+	color: black;
+	font-family: '8-bit';
+	font-size: 100px;
+	position: absolute;
+	left: 230px;
+	bottom: -39.5px;
+}
+.top-title:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.accord-title {
+	display: none;
+}
+.half {
+	width: 50%;
+}
+.main.content {
+    position: relative;
+}
+.right {
+    float: right;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Brave Plugin */
+
+.brave {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 210px;
+}
+.brave img {
+	width: 100%;
+	position: absolute;
+	top: -12px;
+	right: -14px;
+}
+
+/* Screen sizes smaller than 1275 (devices and browsers) */
+	@media only screen and (min-width: 1050px) and (max-width: 1275px) {
+		.brave img {
+			width: 70%;
+		}
+	}
+/* Screen sizes smaller than 1050 (devices and browsers) */
+	@media only screen and (min-width: 900px) and (max-width: 1050px) {
+		.brave img {
+			width: 55%;
+			top: -6px;
+			right: -8px;
+		}
+	}
+/* Screen sizes smaller than 1050 (devices and browsers) */
+	@media only screen and (min-width: 767px) and (max-width: 900px) {
+		.brave img {
+			width: 45%;
+			top: -6px;
+			right: -8px;
+		}
+	}
+/* Screen sizes smaller than 1050 (devices and browsers) */
+	@media only screen and (max-width: 767px) {
+		.brave img {
+			display: none;
+		}
+	}
+
+/* Sticky Footer */
+.footer input {
+    line-height: 30px;
+	width: 500px;
+}
+.btn {
+	margin-top: 25px;
+	transition: color .5s;
+	width: 150px;
+	font-family: '8-bit';
+	font-size: 30px;
+	padding: 5px;
+    line-height: normal;
+}
+.btn:hover {
+	color: red;
+}
+.control-group:first-of-type {
+    margin-bottom: 20px;
+}
+.control-group input {
+	height: 35px;
+}
+.footer {
+	height: 250px;
+}
+.footer p {
+    color: #fff400;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.page-wrap {
+	background-color: #282828;
+  	min-height: 100%;
+  	/* equal to footer + padding height */
+  	margin-bottom: -350px; 
+}
+.page-wrap:after {
+  	content: "";
+	display: block;
+}	
+.placeholder {
+    font-family: '8-bit';
+    font-size: 30px;
+    padding-left: 5px;
+}
+::-webkit-input-placeholder {
+    font-family: '8-bit';
+}
+:-moz-placeholder {
+    font-family: '8-bit';
+}
+::-moz-placeholder {
+    font-family: '8-bit';
+}
+:-ms-input-placeholder {
+    font-family: '8-bit';
+}
+.right textarea {
+	line-height: normal;
+	height: 96px;
+    width: 350px;
+}
+.page-wrap:after {
+  	/* .push must be the same height as footer + padding */
+ 	 height: 350px; 
+}
+.submit {
+	text-align: center;
+}
+
+
+
+/* #Page Styles
+================================================== */
+
+/* Contact Bar */
+a .contact-label {
+	color: #333;
+}
+a:visited .contact-label {
+	color: #fff400;
+}
+.blog-link img {
+	position: absolute;
+	top: 3px;
+}
+.contact-bar {
+	padding: 5px 0;
+}
+.contact-btn {
+	margin: 8px 0 8px -20px;
+}
+.contact-btn .wrapper {
+	margin-left: 25%;
+	position: relative;
+}
+.contact-label {
+	margin-top: 5px;
+	position: absolute;
+	left: 50px;
+	top: 6px;
+}
+.email-link img {
+	padding-top: 5px;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    background-image: url('../images/code-blur.jpg');
+    background-size: cover;
+    height: 400px;
+}
+
+/* Projects */
+.js-logo {
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	bottom: 85px;
+	left: 55px;
+}
+.projects {
+	bottom: 0;
+	left: 0;
+	position: relative;
+	height: 400px;
+}
+
+/* Flexslider */
+.flexslider {
+    border: 3px #fff400 solid;
+	position: absolute;
+    bottom: 55px;
+    right: 55px;
+    margin: 0;
+	width: 475px; 
+    height: 231px;
+}
+.flexslider img {
+    margin: 0;
+}
+
+/* Accordion */
+#accordion {
+	margin: 0;
+}
+#accordion .ui-collapsible-content {
+	padding: 0 !important;
+}
+#accordion .ui-corner-all {
+	border-radius: 0 !important;
+}
+.ui-accordion .ui-accordion-content {
+    border: 0;
+}
+
+/* Statement */
+.statement {
+    height: 190px;
+    color: #f5f5f5;
+    font-family: helvetica;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+
+/* Education */
+#accordion .bred, #accordion .bred .ui-widget-content {
+	background: #af3939 !important;
+}
+#accordion .bgrey, #accordion .bgrey .ui-widget-content {
+	background: #b3b3b3 !important;
+}
+#accordion .bgreen, #accordion .bgreen .ui-widget-content {
+	background: #679651 !important;
+}
+.comp {
+    display: inline;
+    font-weight: bolder;
+}
+
+.edu .columns {
+    display: inline;
+    margin: 0;
+}
+.exp .three.columns {
+    margin: 0;
+}
+.school {
+    display: inline-block;
+    color: #3b3c5b;
+    font-size: 15px;
+    margin: 0;
+    padding: 6px 0
+}
+.school p {
+    margin: 0;
+}
+.ucsd {
+    margin-bottom: 35px;
+}
+.ucsd, .ash {
+    display: block;
+    height: 95px;
+}
+
+/* Work */
+.work {
+    color: #f5f5f5;
+    padding: 0 20px;
+}
+.work a {
+    color: #C51A1A;
+    font-weight: bold;
+}
+.work a:hover {
+    color: #282828;
+    text-decoration: none;
+}
+.work span.title {
+    color: #fff400;
+}
+.work a, .ui-widget-content a {
+	color: #C51A1A;
+}
+	
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		.contact-btn {
+	      margin: 0 0 0 -20px;
+	    }
+		.flexslider {
+			width: 309px;
+            height: 150px;
+            position: absolute;
+            bottom: 55px;
+            right: 55px;
+            margin: 0;
+		}
+        .footer input {
+            width: 350px;
+        }
+		.js-logo {
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			bottom: 85px;
+			left: 55px;
+			
+		}
+		.projects {
+			left: 45px;
+		}
+		.header-logo {
+			position: relative;
+			width: 100%;
+		}
+		.top-logo {
+	        height: auto;
+	        margin-left: 25px;
+	        padding: 10px;
+	        width: 125px;
+	    }
+		.top-logo-wp {
+	        height: auto;
+	        margin-left: 25px;
+	        padding: 10px;
+	        position: relative;
+	        width: 125px;
+	    }
+	    .top-title {
+	        font-size: 80px;
+	        left: 180px;
+	        position: absolute;
+			bottom: -22px;
+	    }
+	    .top-title-wp {
+	        font-size: 76px;
+			left: 152px;
+			position: absolute;
+			top: -13px;
+	    }
+		input {
+			width: 350px;
+		
+		}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.statement {
+			font-size: 25px;
+			line-height: 30px;
+		}
+		.contact-label {
+			font-size: 14px;
+			width: 100%;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.ash img {
+			width: 75%;
+		}
+		textarea.right {
+    		float: none;
+		}
+		.blog-link img {
+			position: absolute;
+			top: 0;
+			display: inline-block;
+			float: left;
+			margin-right: 10px;
+			height: 36px;
+			width: 36.5px;
+		}
+		.btn {
+			margin-top: 0;
+		}
+		.clearfix.row {
+			margin-bottom: 0;
+		}
+		.contact-bar {
+	      position: fixed;
+	      left: 0;
+	      top: 43.5px;
+	      z-index: 50;
+	      width: 50px;
+	      background-color: transparent;
+	    }
+		.contact-btn {
+			margin: 0;
+		}
+		.contact-btn .wrapper {
+			margin: 0;
+		}
+		.control-group {
+			margin-bottom: 20px;
+		}
+		.contact-label {
+			display: none;
+		}
+		.email {
+	      background-color: #b3b3b3;
+	      padding: 2px 4px;
+	      transition: padding .35s;
+	    }
+	    .email:hover {
+	      padding: 2px 7px;
+	    }
+	    .footer {
+	      height: 370px;
+	    }
+        .footer input {
+            width: 420px;
+        }
+	    .google {
+	      background-color: #C63D2D;
+	      padding-left: 1px;
+	      transition: padding .35s;
+	    }
+	    .google:hover {
+	      padding: 0 4px 0 4px;
+	    }
+		.languages {
+			margin-left: 35px !important;
+		}
+		.linkedin {
+			background-color: #4875B4;
+			padding-left: 1px;
+			transition:padding .35s;
+		}
+		.linkedin:hover {
+			padding: 0 4px 0 4px;
+		}
+		.logo, .school, .languages, .software {
+			width: 50% !important;
+		}
+		.page-wrap {
+		    min-height: 100%;
+		    /* equal to footer + padding height */
+		    margin-bottom: -470px; 
+		}
+		.page-wrap:after {
+		    /* .push must be the same height as footer + padding */
+		    height: 470px; 
+		}
+		.paypal {
+	      display: none;
+	    }
+	    .paypal-mobile {
+	      display: block;
+	    }
+	    .paypal-mobile-img {
+	      background-color: #b3b3b3;
+	      padding: 5.5px 6px;
+	      transition: padding .35s;
+	      width: 25px;
+	      height: auto;
+	    }
+	    .paypal-mobile-img:hover {
+	      padding: 5.5px 9px;
+	    }
+	    .paypal-mobile form {
+	      height: 0;
+	    }
+		.placeholder, .right textarea {
+			width: 100%;
+		}
+		.projects {
+			height: 260px;
+			left: 0;
+		}
+		.school {
+			margin-bottom: 15px;
+		}
+		.exp .skills {
+			width: 100% !important;
+			margin-top: 35px;
+		}
+		.software {
+			position: absolute;
+			right: 0;
+		}
+		.top-title-wp {
+			font-size: 76px;
+			left: 150px;
+			top: -14px;
+		}
+		.universities {
+			position: absolute;
+			right: 0;
+		}
+		.ucsd, .ash, .skills {
+			position: relative;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.banner {
+			height: 260px;
+		}
+		.bred {
+			padding: 30px 0;
+		}
+        .flexslider {
+            width: 206px;
+            height: 100px;
+            right: 25px;
+        }
+		.js-logo {
+			left: 25px;
+			bottom: 57px;
+		}
+		.statement {
+			font-size: 18px;
+			line-height: 25px;
+		}
+		.top-logo {
+			padding: 5px;
+			width: 75px;
+		}
+		.top-title {
+			font-size: 40px;
+			left: 114px;
+			bottom: -7px;
+		}
+		.top-title-wp {
+			font-size: 40px;
+			left: 103px;
+			top: -5px;
+		}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		ul {
+			font-size: 14px;
+        	margin-left: 5px;
+        	padding-left: 15px;
+        }
+        .accord-title {
+        	display: block;
+            background: #373737 !important;
+            border: #1f1f1f 1px solid;
+            border-radius: 0;
+            color: #fff;
+            margin-top: 0 !important;
+            text-shadow: 0 1px 0 #111;
+        }
+        .banner {
+        	height: 260px;
+        }
+        .bgreen .work{
+			font-size: 14px;
+		}
+		.contact-bar {
+			top: 32px;
+		}
+        .flexslider {
+        	display: none;
+        }
+        .footer {
+            height: 430px;
+        }
+        .footer input {
+            height: 25px;
+            width: 300px;
+        }
+        .js-logo {
+			bottom: 30%;
+			left: 40%;
+		}
+		.languages {
+			margin-left: 0 !important;
+		}
+		.statement {
+			height: auto;
+			font-size: 14px;
+			line-height: 20px;
+		}
+        .top-logo {
+			padding: 5px;
+			width: 50px;
+		}
+		.top-title {
+			font-size: 29px;
+			left: 85px;
+			bottom: -2px;
+		}
+		.top-title-wp {
+			font-size: 29px;
+			left: 75px;
+			top: -4px;
+		}
+	}
+
+
+

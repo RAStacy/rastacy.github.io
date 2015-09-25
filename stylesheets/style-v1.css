@@ -1,0 +1,89 @@
+body {
+    font-family: helvetica;
+    position: relative;
+}
+.banner img {
+    height: auto;
+    width: 100%;
+    margin-top: 120px;
+}
+.bgreen {
+    background-color: #679651;
+}
+.blgreen {
+    background-color: #CEE6C4;
+}
+.bgrey {
+    background-color: #b3b3b3;
+}
+.bred {
+    background-color: #AF3939;
+}
+.comp {
+    display: inline;
+}
+.edu {
+    padding: 45px 35px 45px 0;
+}
+.edu .columns {
+    display: inline;
+    margin: 0;
+}
+.exp {
+    height: 320px;
+}
+.statement {
+    height: 190px;
+    color: white;
+    font: helvetica;
+    font-family: helvetica;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px;
+    text-align: center;
+}
+.logo {
+    display: inline;
+    padding: 10px;
+}
+.logo img {
+    display: block;
+    margin: auto;
+}
+.main {
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    z-index: 5;
+}
+.school {
+    display: inline-block;
+    color: #3b3c5b;
+    font-size: 15px;
+    margin: 0;
+    padding: 6px 0
+}
+.school p {
+    margin: 0;
+}
+.skills {
+    height: 250px;
+    padding: 45px 0 45px 35px;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+.ucsd {
+    margin-bottom: 35px;
+}
+.ucsd, .ash {
+    display: block;
+    height: 95px;
+}
+.work {
+    padding-top: 35px;
+}
+.work.title {
+    color: yellow;
+}

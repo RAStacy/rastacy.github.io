@@ -1,0 +1,343 @@
+
+/*
+ * CSS Helpers
+ *
+ * AUTHOR: Mindgruve.com
+ * CONTRIBUTORS: TTenoever, MStacey, CKihneman
+ *
+ */
+
+/**************************************************
+	ANALYTICS / TRACKING
+**************************************************/
+
+body > iframe {
+display: none;
+}
+
+body > img {
+position: absolute;
+bottom: 0;
+}
+
+/**************************************************
+	SYMBOLSET ICON FONTS
+**************************************************/
+
+.ss-icon,
+.ss-gizmo,
+.ss-social,
+.ss-standard,
+.ss-symbolicons-block {
+	/* For DW reference only. Apply no styles here. -- TTenoever */
+}
+
+.ss-icon {
+	/* Enables use of top/right/bottom/left preoperties to nudge icon into place */
+	position: relative;
+}
+
+
+/**************************************************
+	POSITIONING
+**************************************************/
+
+/* EXAMPLE: Add the class "text-right" to the columns DIV if you want the elements within that column to be right-aligned. */
+.text-center { text-align: center;}
+
+.text-left { text-align: left;}
+
+.text-right { text-align: right;}
+
+/**************************************************
+	HORIZONTAL MENUS AND LISTS <ul> and <ol>
+**************************************************/
+
+/* NOTE: Also add .clearfix to UL to clear floats */
+ul.list-inline,
+ol.list-inline {
+	margin: 0;
+	padding: 0;
+}
+ul.list-inline > li,
+ol.list-inline > li {
+    display: inline;
+    float: left;
+	line-height: 1;
+	margin: 0 10px 0.5em 0;
+	padding: 0;
+    position: relative;
+}
+
+/**************************************************
+	TOOLTIPS / HELP BALOONS
+**************************************************/
+
+.tooltip {
+	position: relative;
+	width: 15px;
+}
+
+/***** BUTTON / ICON *****/
+.tooltip-btn {
+	color: #da7514;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.tooltip-btn:hover {
+	color: #444444;
+}
+
+/***** CONTENT BOX *****/
+.tooltip-box {
+	background-color: #ffffff;
+	border: 1px solid #d0d0d0;
+	bottom: 30px;
+	color: #444444;
+	display: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	left: -142px;
+	line-height: 20px;
+	padding: 22px;
+	position: absolute;
+	width: 248px;
+	z-index: 9999;
+	/* Rounded Corners */
+	-webkit-border-radius: 6px;
+	        border-radius: 6px;
+	-webkit-background-clip: padding-box;
+			background-clip: padding-box;
+	/* Box-shadow */
+	   -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+	        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+}
+
+.tooltip-pointer {
+	/* Use .ss-icon &#x25BE; */
+	bottom: -10px;
+	color: #ffffff;
+	font-size: 40px;
+	left: 50%;
+	margin-left: -10px;
+	position: absolute;
+	text-shadow: 0 3px 0 rgba(0, 0, 0, 0.20);
+	top: auto;
+}
+
+.tooltip:hover .tooltip-box {
+	display: block;
+}
+
+/***** CONTENT *****/
+.tooltip-box h6 {
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.1;
+	margin-bottom: 10px;
+}
+
+.tooltip-box p {
+	margin: 0;
+	padding: 0;
+}
+
+/**************************************************
+	DEFAULT FORM ELEMENTS: <input>, <textarea>
+	Widths based on columns
+	(Column width minus 20px for border and padding)
+**************************************************/
+.two-thirds.column input[type="text"], .two-thirds.columns input[type="text"],
+.two-thirds.column input[type="password"], .two-thirds.columns input[type="password"],
+.two-thirds.column input[type="email"], .two-thirds.columns input[type="email"],
+.two-thirds.column textarea, .two-thirds.columns textarea {
+    width: 600px;
+}
+
+.two-thirds.column input.search, .two-thirds.columns input.search {
+	width: 568px;
+}
+
+.one-third.column input[type="text"], .one-third.columns input[type="text"],
+.one-third.column input[type="password"], .one-third.columns input[type="password"],
+.one-third.column input[type="email"], .one-third.columns input[type="email"],
+.one-third.column textarea, .one-third.columns textarea {
+    width: 280px;
+}
+
+.one-thirds.column input.search, .one-thirds.columns input.search {
+	width: 248px;
+}
+
+
+.twelve.columns input[type="text"],
+.twelve.columns input[type="password"],
+.twelve.columns input[type="email"],
+.twelve.columns textarea {
+	width: 680px;
+}
+
+.twelve.columns input.search {
+	width: 648px;
+}
+
+.eleven.columns input[type="text"],
+.eleven.columns input[type="password"],
+.eleven.columns input[type="email"],
+.eleven.columns textarea {
+	width: 620px;
+}
+
+.eleven.columns input.search {
+	width: 588px;
+}
+
+.ten.columns input[type="text"],
+.ten.columns input[type="password"],
+.ten.columns input[type="email"],
+.ten.columns textarea {
+	width: 550px;
+}
+
+.ten.columns input.search {
+	width: 518px;
+}
+
+.nine.columns input[type="text"],
+.nine.columns input[type="password"],
+.nine.columns input[type="email"],
+.nine.columns textarea {
+	width: 870px;
+}
+
+.nine.columns input.search {
+	width: 830px;
+}
+
+.eight.columns input[type="text"],
+.eight.columns input[type="password"],
+.eight.columns input[type="email"],
+.eight.columns textarea {
+	width: 440px;
+}
+
+.eight.columns input.search {
+	width: 408px;
+}
+
+.seven.columns input[type="text"],
+.seven.columns input[type="password"],
+.seven.columns input[type="email"],
+.seven.columns textarea {
+	width: 380px;
+}
+
+.seven.columns input.search {
+	width: 348px;
+}
+
+.six.columns input[type="text"],
+.six.columns input[type="password"],
+.six.columns input[type="email"],
+.six.columns textarea {
+	width: 320px;
+}
+
+.six.columns input.search {
+	width: 288px;
+}
+
+.five.columns input[type="text"],
+.five.columns input[type="password"],
+.five.columns input[type="email"],
+.five.columns textarea {
+	width: 250px;
+}
+
+/*.five.columns input.search {
+	width: 228px;
+}*/
+
+.four.columns input[type="text"],
+.four.columns input[type="password"],
+.four.columns input[type="email"],
+.four.columns textarea {
+	width: 366px;
+}
+
+.four.columns input.search {
+	width: 168px;
+}
+
+.three.columns input[type="text"],
+.three.columns input[type="password"],
+.three.columns input[type="email"],
+.three.columns textarea {
+	width: 265px;
+}
+
+.three.columns input.search {
+	width: 225px;
+}
+
+.two.columns input[type="text"],
+.two.columns input[type="password"],
+.two.columns input[type="email"],
+.two.columns textarea {
+	width: 164px;
+}
+
+.two.columns input.search {
+	width: 48px;
+}
+
+.one.columns input[type="text"], .one.column input[type="text"],
+.one.columns input[type="password"], .one.column input[type="password"],
+.one.columns input[type="email"], .one.column input[type="email"],
+.one.columns textarea, .one.column textarea {
+	width: 63px;
+}
+
+.one-sixth.columns input[type="text"],
+.one-sixth.columns input[type="password"],
+.one-sixth.columns input[type="email"] {
+	width: 130px;
+}
+
+.one-sixth.columns input.search {
+	width: 98px;
+}
+
+.one-fifth.columns input[type="text"],
+.one-fifth.columns input[type="password"],
+.one-fifth.columns input[type="email"] {
+	width: 152px;
+}
+
+.one-fifth.columns input.search {
+	width: 120px;
+}
+
+/**************************************************
+	TEXT TRUNCATION
+**************************************************/
+
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/**************************************************
+	FORMS FORMS FORMS
+**************************************************/
+
+/***** Consistent box sizing and appearance - from HTML5 Boilerplate *****/
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }

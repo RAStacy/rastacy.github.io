@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'famous_spaceshipsregular';
+    src: url('fonts/famous_ships/famous_ships-webfont.eot');
+    src: url('fonts/famous_ships/famous_ships-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/famous_ships/famous_ships-webfont.woff') format('woff'),
+    url('fonts/famous_ships/famous_ships-webfont.ttf') format('truetype'),
+    url('fonts/famous_ships/famous_ships-webfont.svg#famous_spaceshipsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'undercoverregular';
+    src: url('fonts/undercover/UNDERCOV-webfont.eot');
+    src: url('fonts/undercover/UNDERCOV-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/undercover/UNDERCOV-webfont.woff') format('woff'),
+    url('fonts/undercover/UNDERCOV-webfont.ttf') format('truetype'),
+    url('fonts/undercover/UNDERCOV-webfont.svg#undercoverregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'xenophoneregular';
+    src: url('fonts/xenophone/xenophone-webfont.eot');
+    src: url('fonts/xenophone/xenophone-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/xenophone/xenophone-webfont.woff') format('woff'),
+    url('fonts/xenophone/xenophone-webfont.ttf') format('truetype'),
+    url('fonts/xenophone/xenophone-webfont.svg#xenophoneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a {
+    color: #B60700;
+    font-family: "xenophoneregular";
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+    a:hover {
+        color: #FF2017;
+    }
+body{
+    background: url(images/gnbkgrd.jpg) no-repeat fixed center;
+}
+h1 {
+    font-family: "undercoverregular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 45px;
+    padding-right: 5%;
+    color: black;
+}
+.maint_box {
+    background-color: whitesmoke;
+    margin-top: 40%;
+    border-radius: 6px;
+    border: 3px solid;
+    padding: 5px 50px;
+}
+.nav {
+    background-color: rgb(44, 44, 44);
+    height: 53px;
+    margin: 0;
+    padding-left: 15px;
+}
+.nav a {
+    line-height: 55px;
+    padding: 0 15px;
+}
+.content {
+    background-color: whiteSmoke;
+    padding: 2%;
+    min-height: 850px;
+}
+.vr {
+    font-family: famous_spaceshipsregular;
+    font-size: 170%;
+    font-weight: bold;
+    padding: 0 5px;
+}
+#head {
+    position: fixed;
+    bottom: 0;
+    left: 8%;
+}
+#head_img {
+    position: relative;
+    width: 70%;
+}
+#hmnav {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    -webkit-transform: rotate(5deg);
+}

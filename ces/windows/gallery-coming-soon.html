@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Windows Gallery | Creative Energy Solutions</title>
+    <link rel="author" href="Creative Energy Solutions" />
+    <link rel="publisher" href="Creative Energy Solutions" />
+    
+	<meta name="description" content="Windows For Every Reason">
+    <meta name="keywords" content="windows, doors, patio covers" />
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS   ================================================== -->
+    <link rel="stylesheet" href="../stylesheets/skeleton.css">
+    <link rel="stylesheet" href="../stylesheets/layout.css">
+    
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="../styleie.css" type="text/css">
+    <![endif]-->
+    
+    <!-- JS  ================================================== -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+
+    <script src="../js/html5shiv.js"></script>
+    <script src="../js/html5shiv-printshiv.js"></script>
+    <!--[if lt IE 9]>
+    <script src="../html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="../icon/logo-fav.png">
+	
+</head>
+<body>
+    <header class="wht-glaze">
+        <div class="container">
+            <div class="three columns shrink">
+                <a href="index.html"><img src="../images/pro/logo.png" width="184px" height="80px" class="logo" title="Creative Energy Solutions Logo" alt="Creative Energy Solutions Logo"></a>
+            </div>
+            <div class="offset-by-one twelve columns shrink">
+                <div class="row" id="no-mobile">
+                    <div class="offset-by-five three columns phone">
+                        <p>1-555-555-5555</p>
+                    </div>
+                    <div class="three columns">
+                        <input type="button" class="quote-btn btn grn-bkgd" value="REQUEST A QUOTE" onclick="location.href='contact.html';">
+                    </div>
+                </div>
+                <div class="row">
+                    <nav class="header-nav" id="nav">
+                        <ul>
+                            <li><a href="../index.html">HOME</a></li>
+                            <li><a href="../windows.html">WINDOWS</a></li>
+                            <li><a href="../doors.html">DOORS</a></li>
+                            <li><a href="../gallery.html" class="active">GALLERY</a></li>
+                            <li><a href="../about.html">ABOUT</a></li>
+                            <li><a href="../contact.html">CONTACT</a></li>
+                        </ul>   
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content win-gallery">
+        <div class="container">
+            <div class="bread-nav">
+                <ul class="breadcrumb">
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="windows.html">Windows</a></li>
+                </ul>
+            </div>
+            <div class="coming-soon">
+                <h1>Coming Soon!</h1>
+                <p>Please check back with us shortly for updates to our gallery</p>
+            </div>
+        </div>
+    </div>        
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="three columns shrink">
+                    <a href="http://www.bbb.org/" target="_blank"><img src="../images/pro/bbb.png" width="119px" height="35px" title="Better Business Bureau" alt="Better Business Bureau"></a>
+                </div>
+                <div class="four columns shrink">
+                    <table class="comp-info">
+                        <tbody>
+                            <tr>
+                                <td>Creative Energy Solutions</td>
+                            </tr>
+                            <tr>
+                                <td>Ph: 555.555.5555</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="nine columns footer-nav">
+                    <ul>
+                        <li>
+                            <a href="../sitemap.html" title="Site Map">site map</a>
+                        </li>
+                        <li class="divider">|</li>
+                        <li>
+                            <a href="../windows.html" title="Windows">windows</a>
+                        </li>
+                        <li class="divider">|</li>
+                        <li>
+                            <a href="../doors.html" title="Doors">doors</a>
+                        </li>
+                        <li class="divider">|</li>
+                        <li>
+                            <a href="../gallery.html" title="Gallery">gallery</a>
+                        </li>
+                        <li class="divider">|</li>
+                        <li>
+                            <a href="../contact.html" title="Contact">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="seven columns copyright">
+                    <p>Copyright &copy; 2013 Creative Energy Solutions. All Rights Reserved.</p>
+                </div>
+                <div class="nine columns rs">
+                    <p>Site designed and built by <a href="http://ryanstacy.net">RS Web Development</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+
+<script>
+    $("#nav").addClass("js");
+
+    $("#nav").addClass("js").before('<div id="menu"><img src="../icon/mobile-menu.svg"></div>');
+
+    $("#menu").click(function(){
+        $("#nav").slideToggle();
+    });
+
+    $(window).resize(function() {
+        if(window.innerWidth > 768) {
+            $("#nav").removeAttr("style");
+        }
+    });
+</script>
+
+</html>
